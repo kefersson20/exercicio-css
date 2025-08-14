@@ -1,0 +1,35 @@
+/* 1) Links: padrão vermelho; ao passar o mouse, "lemon" (amarelo)  */
+/* OBS: "lemon" não é uma palavra-chave CSS válida; usei um tom limão (#FFF44F). */
+a {
+  color: red;
+  text-decoration: none; /* opcional: deixa sem sublinhado */
+}
+a:hover,
+a:focus {
+  color: #FFF44F; /* tom "lemon" */
+  text-decoration: underline; /* opcional: feedback de interação */
+}
+
+/* 2) Parágrafos */
+/* Todos os parágrafos em Arial */
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Parágrafo imediatamente após um h1 em negrito */
+h1 + p {
+  font-weight: bold;
+}
+
+/* 3) Classe .destaque */
+/* Por padrão, usa Arial */
+.destaque {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Se atribuída a um <p>, fica em negrito */
+p.destaque {
+  font-weight: bold;
+}
+/* Se atribuída a um <strong>, fica vermelho */
+strong.destaque {
+  color: red;
+}
